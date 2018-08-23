@@ -22,7 +22,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
         
         ofMesh mesh;
-        complex<double> p[10000][1w0000];
+        complex<double> p[10000][10000];
         ofBoxPrimitive box;
         long a = -1, b = 0;
         ofEasyCam cam;

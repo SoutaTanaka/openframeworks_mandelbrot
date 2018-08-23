@@ -3,18 +3,18 @@
 void ofApp::setup(){
     ofBackground(0);
     glPointSize(3);
-    for(double i = -4; i <= 4 ; i += 0.0008){
+    for(double i = -4; i <= 4 ; i += 0.008){
         b = -1;
         a++;
-        for(double j = -4; j <= 4 ; j += 0.0008){ 
+        for(double j = -4; j <= 4 ; j += 0.008){ 
             b++;
             p[a][b].real(i);
             p[a][b].imag(j);
         }   
     }
 
-    for(int i = -5000; i < 5000; i++){
-        for(int j = -5000; j < 5000; j++){
+    for(int i = -500; i < 500; i++){
+        for(int j = -500; j < 500; j++){
             int k = 0;
             complex<double> z = 0;
             while(abs(z) < 5 || k < 30){
