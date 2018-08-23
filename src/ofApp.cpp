@@ -1,45 +1,40 @@
 #include "ofApp.h"
-
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(0);
-    glPointSize(0.1);
-
-    for(double i = -2; i <= -2 ; i += 0.004){
+    glPointSize(3);
+    for(double i = -4; i <= 4 ; i += 0.0008){
         b = -1;
         a++;
-        for(double j = -2; j <= -2 ; j += 0.004){ 
+        for(double j = -4; j <= 4 ; j += 0.0008){ 
             b++;
             p[a][b].real(i);
             p[a][b].imag(j);
-            while(int k = 0;p[a][b].abs() < 2 || k < 30){
-                k++;
-
-            mesh.addVertex(ofVec3f(p[a][b].real() * 1000, p[a][b].imag() * 1000, 0));
         }   
     }
-    
+
+    for(int i = -5000; i < 5000; i++){
+        for(int j = -5000; j < 5000; j++){
+            int k = 0;
+            complex<double> z = 0;
+            while(abs(z) < 5 || k < 30){
+                k++;
+                z = z * z + p[a][b];
+            }
+            mesh.addVertex(ofVec3f(i, j, 0));
+            mesh.addColor(ofColor::fromHsb(k * 30 % 255, 255, 255, 255));
+        }
+    }
 
 }
-
 //--------------------------------------------------------------
 void ofApp::update(){
-
 }
-
 //--------------------------------------------------------------
 void ofApp::draw(){
     cam.begin();
-
     mesh.draw();
     mesh.drawVertices();
-    /*1
-    ofSetColor(255);
-    box.setPosition(0, 0, 0);
-    box.set(150);
-    box.draw(); 
-    */
-
     cam.end();
 }
 
