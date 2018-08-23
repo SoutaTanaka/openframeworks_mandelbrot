@@ -3,26 +3,28 @@
 void ofApp::setup(){
     ofBackground(0);
     glPointSize(3);
-    for(double i = -4; i <= 4 ; i += 0.008){
+    double i, j;
+    for(i = -2; i <= 2 ; i += 0.0008){
         b = -1;
         a++;
-        for(double j = -4; j <= 4 ; j += 0.008){ 
+        for(j = -2; j <= 2 ; j += 0.0008){ 
             b++;
             p[a][b].real(i);
             p[a][b].imag(j);
         }   
     }
-
-    for(int i = -500; i < 500; i++){
-        for(int j = -500; j < 500; j++){
-            int k = 0;
-            complex<double> z = 0;
-            while(abs(z) < 5 || k < 30){
+    int e, f;
+    for(e = -2500; e < 2500; e++){
+        for(f = -2500;f < 2500; f++){
+            k = 0;
+            z = 0;
+            while(abs(z) < 5 && k < 20){
                 k++;
-                z = z * z + p[a][b];
+                z = z * z + p[e + 2500][f + 2500];
+
             }
-            mesh.addVertex(ofVec3f(i, j, 0));
-            mesh.addColor(ofColor::fromHsb(k * 30 % 255, 255, 255, 255));
+            mesh.addVertex(ofVec3f(e, f, 0));
+            mesh.addColor(ofColor::fromHsb(abs(k * 30) % 255, 255, 255, 255));
         }
     }
 
