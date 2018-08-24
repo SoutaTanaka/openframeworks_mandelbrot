@@ -2,6 +2,7 @@
 #include "ofMain.h"
 #include <complex>
 
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -21,10 +22,11 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
         
+
+        int k, h = 1000, w = 1000;
         ofMesh mesh;
-        complex<double> p[5000][5000], z = 0;
+        complex<double> p[1000][1000], z = 0, c;
         ofBoxPrimitive box;
         long a = -1, b = 0;
         ofEasyCam cam;
-        int k;
 };
