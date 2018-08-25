@@ -22,10 +22,9 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
         
-
-        int k, h = 1000, w = 1000;
+        int k, h = 5000, w = 5000;
         ofMesh mesh;
-        complex<double> p[1000][1000], z = 0, c;
+        complex<double> p, z = 0, c, zn = 0;
         ofBoxPrimitive box;
         long a = -1, b = 0;
         ofEasyCam cam;
