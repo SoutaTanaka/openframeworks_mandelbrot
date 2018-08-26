@@ -1,7 +1,7 @@
 #pragma once
 #include "ofMain.h"
 #include <complex>
-
+#include <ofxGui.h>
 
 class ofApp : public ofBaseApp{
 
@@ -9,6 +9,8 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+        void julia_set();
+        void mandelbrot_set();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -22,10 +24,27 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
         
-        int k, h = 5000, w = 5000;
+        int k;
         ofMesh mesh;
         complex<double> p, z = 0, c, zn = 0;
         ofBoxPrimitive box;
         long a = -1, b = 0;
         ofEasyCam cam;
+        
+        ofxPanel gui;
+        ofxFloatSlider imag;
+        ofxFloatSlider real;
+        ofxFloatSlider x;
+        ofxFloatSlider h;
+        ofxFloatSlider y;
+        ofxFloatSlider w;
+        ofxIntSlider hp;
+        ofxButton rerode;
+        ofxToggle mandelbrot;
+
+
+
+
+
+
 };

@@ -1,5 +1,5 @@
 obj/linux64/Release/src/main.o: \
- /home/sota/of_v0.10.0_linux64gcc6_release/apps/myApps/mandelbrot/src/main.cpp \
+ /home/sota/of_v0.10.0_linux64gcc6_release/apps/myApps/julia/src/main.cpp \
  /home/sota/of_v0.10.0_linux64gcc6_release/libs/openFrameworks/ofMain.h \
  /home/sota/of_v0.10.0_linux64gcc6_release/libs/openFrameworks/utils/ofConstants.h \
  /home/sota/of_v0.10.0_linux64gcc6_release/libs/tess2/include/tesselator.h \
@@ -520,7 +520,18 @@ obj/linux64/Release/src/main.o: \
  /home/sota/of_v0.10.0_linux64gcc6_release/libs/openFrameworks/3d/of3dUtils.h \
  /home/sota/of_v0.10.0_linux64gcc6_release/libs/openFrameworks/3d/ofCamera.h \
  /home/sota/of_v0.10.0_linux64gcc6_release/libs/openFrameworks/3d/ofEasyCam.h \
- /home/sota/of_v0.10.0_linux64gcc6_release/apps/myApps/mandelbrot/src/ofApp.h
+ /home/sota/of_v0.10.0_linux64gcc6_release/apps/myApps/julia/src/ofApp.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxGui.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxToggle.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxBaseGui.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxSlider.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxInputField.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxSliderGroup.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxGuiGroup.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxButton.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxLabel.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxColorPicker.h \
+ /home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxPanel.h
 
 /home/sota/of_v0.10.0_linux64gcc6_release/libs/openFrameworks/ofMain.h:
 
@@ -1594,4 +1605,26 @@ obj/linux64/Release/src/main.o: \
 
 /home/sota/of_v0.10.0_linux64gcc6_release/libs/openFrameworks/3d/ofEasyCam.h:
 
-/home/sota/of_v0.10.0_linux64gcc6_release/apps/myApps/mandelbrot/src/ofApp.h:
+/home/sota/of_v0.10.0_linux64gcc6_release/apps/myApps/julia/src/ofApp.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxGui.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxToggle.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxBaseGui.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxSlider.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxInputField.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxSliderGroup.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxGuiGroup.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxButton.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxLabel.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxColorPicker.h:
+
+/home/sota/of_v0.10.0_linux64gcc6_release/addons/ofxGui/src/ofxPanel.h:
