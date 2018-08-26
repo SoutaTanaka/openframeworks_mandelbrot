@@ -3,8 +3,8 @@
 void ofApp::setup(){
 
     gui.setup();
-    gui.add(imag.setup("iamg", 0, -2, 2));
     gui.add(real.setup("real", 0, -2, 2));
+    gui.add(imag.setup("imag", 0, -2, 2));
     gui.add(x.setup("x", -2, -2, 2));
     gui.add(w.setup("w", 4, 0, 4));
     gui.add(y.setup("y", -2, -2, 2));
@@ -25,8 +25,8 @@ void ofApp::setup(){
             p.imag(j);
             k = 0;
             z = 0;
-            z.real(imag);
-            z.imag(real);
+            z.real(real);
+            z.imag(imag);
             while(abs(p) < 2 && k < 400){
                 k++;
                 p = p * p + z;
