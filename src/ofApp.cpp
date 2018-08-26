@@ -11,7 +11,7 @@ void ofApp::setup(){
     gui.add(h.setup("h", 4, 0, 4));
     gui.add(hp.setup("hp X wp", 2000, 500, 5000));
     gui.add(mandelbrot.setup("mandelbrot set", false));
-    gui.add(rerode.setup("rerode"));
+    gui.add(rerode.setup("reload"));
 
     //ofBackground(0);
     glPointSize(3);
@@ -66,10 +66,10 @@ void ofApp::julia_set(){
 void ofApp::mandelbrot_set(){
     mesh.clear();
     double i, j, e, f;
-    for(i = -2, e = -1 * (hp / 2); i <= 2 && e < hp / 2 ; i += 4.0 / hp, e++){
+    for(i = x, e = -1 * (hp / 2); i <= x + w && e < hp / 2 ; i += w / hp, e++){
         b = -1;
         a++;
-        for(j = -2, f = -1 * ( hp / 2); j <= 2 && f < hp / 2; j += 4.0 / hp, f++){ 
+        for(j = y, f = -1 * ( hp / 2); j <= y + h && f < hp / 2; j += h / hp, f++){ 
             b++;
             p = 0;
             p.real(i);
